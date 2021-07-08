@@ -25,4 +25,4 @@ Got the idea for this when the family decided to move to the shore. This is Japa
 * The problem is atmospheric pressure can change A LOT during the day and the altitude can drift by up to 70 meters
 * My solution is to get the most current atmospheric reading from Japan Meteorological Agency website that provides on the hour updates. The site lists elevation of its barometric sensor, which can be used to calculate P0
 * Use Pythonista iPhone app to scrape the data with BeautifulSoup and pipe it to the TinyDuino via BLE
-
+![alt text](https://photos.app.goo.gl/B6tj4sBPkknxrN278)
