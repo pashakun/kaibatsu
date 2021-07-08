@@ -2,7 +2,7 @@
 Using Arduino-type microcontroller with an atmospheric pressure sensor and a Bluetoosh Low Energy module to track elevation above sea level.
 
 ## Abstract
-Got the idea for this when the family decided to move to the short. This is Japan, so tsunami's are a thing. Figured it would be nice to know your elevation above sea level at all times. Sure, there is an for that, but I wanted something that gives an ambient awareness at all times. After a while you have an mental map of topography.
+Got the idea for this when the family decided to move to the shore. This is Japan, so tsunamis are a thing. Figured it would be nice to know your elevation above sea level at all times. Sure, there is an app for that, but I wanted something that gives an ambient awareness at all times. After a while you generate a mental map of local topography.
 
 ## Hardware
 
@@ -17,5 +17,12 @@ Got the idea for this when the family decided to move to the short. This is Japa
 
 * Arduino IDE
 * Pythonista
-** BeautifulSoup
-** cb
+
+## Process
+
+* Barometric pressure sensor only show relative altitude. To know your absolute elevation, you need to know the current atmospheric pressure at sea level (P0)
+* One way to handle it is to instantiate the sensor at a know altitude with the number hard-coded in
+* The problem is atmospheric pressure can change A LOT during the day and the altitude can drift by up to 70 meters
+* My solution is to get the most current atmospheric reading from Japan Meteorological Agency website that provides on the hour updates. The site lists elevation of its barometric sensor, which can be used to calculate P0
+* Use Pythonista iPhone app to scrape the data with BeautifulSoup and pipe it to the TinyDuino via BLE
+
