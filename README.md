@@ -1,5 +1,5 @@
 # KAIBATSU
-Using Arduino-type microcontroller with an atmospheric pressure sensor and a Bluetoosh Low Energy module to track elevation above sea level.
+Using Arduino-type microcontroller with an atmospheric pressure sensor and a Bluetooth Low Energy module to track elevation above sea level.
 
 ![alt text](https://github.com/pashakun/kaibatsu/blob/main/IMG_2612.jpg)
 
