@@ -1,6 +1,8 @@
 # KAIBATSU
 Using Arduino-type microcontroller with an atmospheric pressure sensor and a Bluetoosh Low Energy module to track elevation above sea level.
 
+![alt text](https://github.com/pashakun/kaibatsu/blob/main/IMG_2612.jpg)
+
 ## Abstract
 Got the idea for this when the family decided to move to the shore. This is Japan, so tsunamis are a thing. Figured it would be nice to know your elevation above sea level at all times. Sure, there is an app for that, but I wanted something that gives an ambient awareness at all times. After a while you generate a mental map of local topography.
 
