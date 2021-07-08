@@ -20,8 +20,8 @@ Got the idea for this when the family decided to move to the shore. This is Japa
 
 ## Process
 
-* Barometric pressure sensor only show relative altitude. To know your absolute elevation, you need to know the current atmospheric pressure at sea level (P0)
-* One way to handle it is to instantiate the sensor at a know altitude with the number hard-coded in
+* Barometric pressure sensors only show relative altitude. To know your absolute elevation, you need current atmospheric pressure at sea level (P0)
+* One way to handle it is to instantiate the sensor at a known altitude with the number hard-coded in
 * The problem is atmospheric pressure can change A LOT during the day and the altitude can drift by up to 70 meters
 * My solution is to get the most current atmospheric reading from Japan Meteorological Agency website that provides on the hour updates. The site lists elevation of its barometric sensor, which can be used to calculate P0
 * Use Pythonista iPhone app to scrape the data with BeautifulSoup and pipe it to the TinyDuino via BLE
